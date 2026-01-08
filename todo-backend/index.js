@@ -16,6 +16,7 @@ const typeDefs = gql`
   type Mutation { 
     addTodo(task: String!): Todo  
     toggleTodo(id: ID!): Todo 
+    deleteTodo(id: ID!): Todo
   }
 
 `;
@@ -38,6 +39,13 @@ const resolvers = {
     toggleTodo: async (_, { id }) => {
       const res = await pool.query(
         'UPDATE todos SET completed = NOT completed WHERE id = $1 RETURNING *',
+        [id]
+      );
+      return res.rows[0];
+    },
+    deleteTodo: async (_, { id }) => {
+      const res = await pool.query(
+        'DELETE FROM todos WHERE id = $1 RETURNING *',
         [id]
       );
       return res.rows[0];
