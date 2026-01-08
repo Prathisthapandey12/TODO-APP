@@ -1,8 +1,10 @@
 # Full-Stack Todo App (Expo, Apollo & PostgreSQL)
 
 A mobile-responsive Todo application featuring a **GraphQL API** and persistent **PostgreSQL** storage.
+<p align="center">
+ <img width="200" height="800" alt="image" src="https://github.com/user-attachments/assets/00f2bc51-e7f1-4f43-9549-d11fde85ea1a" />
+</p>
 
-<img width="200" height="800" alt="image" src="https://github.com/user-attachments/assets/00f2bc51-e7f1-4f43-9549-d11fde85ea1a" />
 
 ## 🛠️ Tech Stack
 * **Frontend:** React Native with **Expo Go** and **Apollo Client**.
