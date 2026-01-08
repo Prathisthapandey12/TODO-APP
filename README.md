@@ -2,6 +2,8 @@
 
 A mobile-responsive Todo application featuring a **GraphQL API** and persistent **PostgreSQL** storage.
 
+<img width="717" height="1600" alt="image" src="https://github.com/user-attachments/assets/00f2bc51-e7f1-4f43-9549-d11fde85ea1a" />
+
 ## 🛠️ Tech Stack
 * **Frontend:** React Native with **Expo Go** and **Apollo Client**.
 * **Backend:** **Apollo Server** (Node.js).
