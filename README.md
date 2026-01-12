@@ -18,11 +18,14 @@ A mobile-responsive Todo application featuring a **GraphQL API** and persistent 
 * **Backend:** **Apollo Server** (Node.js).
 * **Database:** **PostgreSQL** for data persistence.
 * **Navigation:** **Expo Router** for screen management.
+* **Security:** **JWT (JSON Web Tokens) for sessions and Bcryptjs for password hashing.
 
 ---
 
 ## 🚀 Features
-* **Add Tasks:** Save new todos directly to the PostgreSQL database via GraphQL mutations.
+* **Unified "Find-or-Create" Auth** A single mutation (authenticate) that logs in existing users or automatically registers new ones if the username isn't found.
+* **Task Ownership:** Todos are linked to specific User IDs. You only see the tasks you created.
+* **Smart Filtering:** Toggle between All, Pending, and Done status with backend-optimized queries.
 * **Toggle Status:** Update completion status ("Done" vs "Pending") with instant UI feedback.
 * **Delete Tasks:** Remove entries from the database (Logic integrated across frontend and backend).
 * **Real-time Synchronization:** Utilizes `useQuery` and `refetch` to keep the list updated across sessions.
@@ -37,16 +40,24 @@ A mobile-responsive Todo application featuring a **GraphQL API** and persistent 
 3.  The server connects via port `5433` using the credentials defined in your database pool.
 4.  Run the following SQL to create your table:
     ```sql
+    -- 1. Create Users Table
+    CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    username TEXT UNIQUE NOT NULL,
+    password TEXT NOT NULL
+    );
+    -- 2. Create Todos Table with Foreign Key
     CREATE TABLE todos (
-      id SERIAL PRIMARY KEY,
-      task TEXT NOT NULL,
-      completed BOOLEAN DEFAULT FALSE
+    id SERIAL PRIMARY KEY,
+    task TEXT NOT NULL,
+    completed BOOLEAN DEFAULT FALSE,
+    user_id INTEGER REFERENCES users(id) ON DELETE CASCADE
     );
     ```
 
 ### 2. Backend Setup (Apollo Server)
 1.  Navigate to your server directory.
-2.  Install dependencies: `npm install apollo-server pg graphql`.
+2.  Install dependencies: `npm install apollo-server pg graphql jsonwebtoken bcryptjs`.
 3.  Start the server:
     ```bash
     node index.js
