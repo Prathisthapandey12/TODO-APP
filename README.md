@@ -23,7 +23,7 @@ A mobile-responsive Todo application featuring a **GraphQL API** and persistent 
 ---
 
 ## 🚀 Features
-* **Unified "Find-or-Create" Auth** A single mutation (authenticate) that logs in existing users or automatically registers new ones if the username isn't found.
+* **Unified "Find-or-Create" Auth:** A single mutation (authenticate) that logs in existing users or automatically registers new ones if the username isn't found.
 * **Task Ownership:** Todos are linked to specific User IDs. You only see the tasks you created.
 * **Smart Filtering:** Toggle between All, Pending, and Done status with backend-optimized queries.
 * **Toggle Status:** Update completion status ("Done" vs "Pending") with instant UI feedback.
