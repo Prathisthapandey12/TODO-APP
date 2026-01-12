@@ -1,14 +1,15 @@
 # Full-Stack Todo App (Expo, Apollo & PostgreSQL)
 
 A mobile-responsive Todo application featuring a **GraphQL API** and persistent **PostgreSQL** storage.
-<img width="200" height="800" alt="image" src="https://github.com/user-attachments/assets/c77cb71d-7f77-4857-87f4-28cf1d537b4b" />
-<img width="200" height="800" alt="image" src="https://github.com/user-attachments/assets/0b147e84-fb30-4cf5-816b-6472e32fc0ec" />
-<img width="200" height="800" alt="image" src="https://github.com/user-attachments/assets/198bc45e-c608-4fcc-9166-7074bd42d72b" />
-<img width="200" height="800" alt="image" src="https://github.com/user-attachments/assets/265a98ee-f4ad-4f60-81e0-83c8c4856be9" />
+
+
 
 
 <p align="center">
- <img width="200" height="800" alt="image" src="https://github.com/user-attachments/assets/00f2bc51-e7f1-4f43-9549-d11fde85ea1a" />
+ <img width="200" height="800" alt="image" src="https://github.com/user-attachments/assets/c77cb71d-7f77-4857-87f4-28cf1d537b4b" />
+ <img width="200" height="800" alt="image" src="https://github.com/user-attachments/assets/0b147e84-fb30-4cf5-816b-6472e32fc0ec" />
+ <img width="200" height="800" alt="image" src="https://github.com/user-attachments/assets/198bc45e-c608-4fcc-9166-7074bd42d72b" />
+ <img width="200" height="800" alt="image" src="https://github.com/user-attachments/assets/265a98ee-f4ad-4f60-81e0-83c8c4856be9" />
 </p>
 
 
