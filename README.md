@@ -18,7 +18,7 @@ A mobile-responsive Todo application featuring a **GraphQL API** and persistent 
 * **Backend:** **Apollo Server** (Node.js).
 * **Database:** **PostgreSQL** for data persistence.
 * **Navigation:** **Expo Router** for screen management.
-* **Security:** **JWT (JSON Web Tokens) for sessions and Bcryptjs for password hashing.
+* **Security:** JWT (JSON Web Tokens) for sessions and Bcryptjs for password hashing.
 
 ---
 
